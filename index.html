@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fixes  favicon bug in chrome -->
+    <link rel="shortcut icon" href="#">
+    <title>Initab-Clone</title>
+</head>
+
+<body onload="onLoad()">
+    <div class="container">
+        <div class="navigation">
+            <div class="buttons">
+                <h6 class="settingsButton button">SETTINGS</h6>
+                <h6 class="gistsButton button">GISTS</h6>
+                <h6 class="stackoverflowButton button">STACK OVERFLOW</h6>
+                <h6 class="trendingButton button">TRENDING</h6>
+                <h6 class="scratchpadButton button">SCRATCH PAD</h6>
+                <h6 class="playgroundButton button">PLAYGROUND</h6>
+                <h6 class="helpButton button">HELP/INTRO</h6>
+            </div>
+            <div class="socialMedia">
+                <div class="logo">
+                    <input type="image" src="images/Initab_logo.png" alt=""
+                        onclick="handleClick('https://initab.com/')">
+                </div>
+                <div class="icons">
+                    <input class="icon" type="image" src="images/Github.png" alt=""
+                        onclick="handleClick('https://github.com/Alooov')">
+                    <input class="icon" type="image" src="images/youtube.png" alt=""
+                        onclick="handleClick('https://www.youtube.com')">
+                </div>
+            </div>
+        </div>
+        <div class="redditNews">
+            <h5 class="title">POPULAR ON R/JAVASCRIPT</h5>
+            <div class="redditPosts" id="redditPosts">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="history">
+                <h5 class="title">RELEVANT JAVASCRIPT HISTORY</h5>
+                <div class="historyContent" id="historyContent">
+                </div>
+            </div>
+            <div class="digitalClock">
+                <div class="clock">
+                    <h1 class="time" id="time"></h1>
+                    <h5 class="period" id="period"></h5>
+                </div>
+                <div class="date">
+                    <p class="date" id="date"></p>
+                </div>
+            </div>
+        </div>
+        <div class="githubIssues">
+            <div class="github">
+                <div class="header">
+                    <h5 class="title" id="title">GITHUB ISSUES HISTORY</h5>
+                    <p class="gitlab">switch to gitlab</p>
+                </div>
+                <div class="switch">
+                    <h4 class="switchTitle">Issues</h4>
+                </div>
+                <div class="issues" id="issues">
+                </div>
+            </div>
+            <div class="ad"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

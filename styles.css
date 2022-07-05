@@ -1,0 +1,296 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: #2d3042;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-bottom: 35px;
+    margin-top: 40px;
+    text-align: center;
+    color: lightblue;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+    width: 7%;
+    background-color: #44475a;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.settingsButton {
+    color: lightskyblue;
+}
+
+.gistsButton {
+    color: lightgreen;
+}
+
+.stackoverflowButton {
+    color: orange;
+}
+
+.trendingButton {
+    color: violet;
+}
+
+.scratchpadButton {
+    color: orchid;
+}
+
+.playgroundButton {
+    color: white;
+}
+
+.helpButton {
+    color: yellow;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.icon {
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.redditNews {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-width: 25%;
+}
+
+.redditNews::-webkit-scrollbar {
+    width: 0;
+}
+
+.redditPosts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: xx-small;
+    border-left-style: solid;
+    border-color: #44475a;
+}
+
+.content {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin: 0;
+    color: white;
+}
+
+.postedBy {
+    padding-left: 10px;
+    color: lightblue;
+}
+
+.user {
+    color: yellow;
+}
+
+.redditScore {
+    color: #4854a0;
+    padding-left: 10px;
+}
+
+.linkToComments {
+    color: deeppink;
+    padding-left: 10px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.history::-webkit-scrollbar {
+    width: 0;
+}
+
+.postsContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.postBody {
+    color: #4e5cb6;
+    font-size: xx-small;
+}
+
+.postTime {
+    font-size: xx-small;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.digitalClock {
+    height: 50%;
+    border-top-style: solid;
+    border-color: #44475a;
+    font-size: xx-large;
+}
+
+.time {
+    color: #4854a0;
+    margin: 0;
+}
+
+.period {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #4854a0;
+    margin: 0;
+    padding-bottom: 15px;
+
+}
+
+.digitalClock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    color: #4854a0;
+    font-size: x-small;
+    margin: 0;
+}
+
+.githubIssues {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    padding-left: 30px;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+.gitlab {
+    margin-top: 10px;
+    font-size: xx-small;
+    color: #4e5cb6;
+    text-align: center;
+}
+
+/* For GithubIssues column */
+.header {
+    margin-bottom: 15px;
+}
+
+/* Supposed to be able to switch to PR request but not supposed to implement it. */
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchTitle {
+    margin-top: 0px;
+    color: yellow;
+}
+
+.issues {
+    display: flex;
+    flex-direction: column;
+}
+
+.issue {
+    margin-bottom: 40px;
+    font-size: xx-small;
+    border-left-style: solid;
+    border-color: #44475a;
+}
+
+.repo {
+    margin-top: 0px;
+    padding-left: 10px;
+    color: #4e5cb6;
+}
+
+.issueNumber {
+    padding-left: 10px;
+    color: yellow;
+}
+
+.github {
+    height:85%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.github::-webkit-scrollbar {
+    width: 0;
+}
+
+.ad {
+    padding-left: 30px;
+    border-top-style: solid;
+    border-color:#44475a;
+}
